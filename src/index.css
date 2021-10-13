@@ -56,6 +56,59 @@ button{
     margin-top: 75px;
 }
 
+.deployedButtonDiv{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.deployedButtonDiv :nth-child(2){
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.geprWebImg{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.geprWebAppButton{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.geprMobileImgOne{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    margin-right: 5px;
+}
+
+.geprMobileImgTwo{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    margin-left: 5px;
+}
+
+.vitalsMobileImgOne{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    margin-right: 5px;
+    margin-bottom: 40px;
+}
+
+.vitalsMobileImgTwo{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    margin-left: 5px;
+    margin-bottom: 40px
+}
+
 @media (max-width:700px){
     .mainTitle{
         font-size: 40px;
@@ -87,5 +140,35 @@ button{
 
     .deployedDiv{
         font-size: 8px;
+    }
+
+    .geprWebImg{
+        height: 200px;
+        width: 300px;
+    }
+
+    .geprMobileImgOne{
+        height: 300px;
+        width: 150px;
+    }
+    
+    .geprMobileImgTwo{
+        height: 300px;
+        width: 150px;
+    }
+
+    .appStoreLink{
+        height: 75px;
+        width: 150px;
+    }
+
+    .vitalsMobileImgOne{
+        height: 300px;
+        width: 150px;
+    }
+    
+    .vitalsMobileImgTwo{
+        height: 300px;
+        width: 150px;
     }
 }

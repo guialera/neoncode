@@ -14,11 +14,13 @@ function MainComponent() {
     function aboutToggle() {
         setShowAbout(prevShowAbout => !prevShowAbout)
         setShowWelcome(false)
+        setShowDeployed(false)
     }
 
     function deployedToggle() {
         setShowDeployed(prevShowDeployed => !prevShowDeployed)
         setShowWelcome(false)
+        setShowAbout(false)
     }
 
     return (
@@ -28,8 +30,12 @@ function MainComponent() {
                 <Welcome />
             </div>
             <div className="buttonDiv">
-                <button onClick={aboutToggle} style={{ backgroundColor: showAbout ? "#FFFF00" : "coral" }}>{"<About />"}</button>
-                <button onClick={deployedToggle} style={{ backgroundColor: showDeployed ? "#FFFF00" : "coral" }}>{"<Deployed />"}</button>
+                <button onClick={aboutToggle} style={{ backgroundColor: showAbout ? "#FFFF00" : "coral" }}>
+                    {"<About />"}
+                </button>
+                <button onClick={deployedToggle} style={{ backgroundColor: showDeployed ? "#FFFF00" : "coral" }}>
+                    {"<Deployed />"}
+                </button>
             </div>
             <div style={{ display: showAbout ? "block" : "none" }}>
                 <About />
