@@ -1,12 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body{
     background: fuchsia;
+    margin: 0px
 }
 
 .mainTitle{
+    background: chartreuse;
+    margin-top: 0px;
     text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 80px;
 }
 
-.secondaryTitle{
+.aboutDiv{
+    font-family: 'Press Start 2P', cursive;
     text-align: center;
-    margin-top: 400px;
+    margin-top: 75px;
+}
+
+.aboutParagraph{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.deployedDiv{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 75px;
+}
+
+@media (max-width:700px){
+    .mainTitle{
+        font-size: 40px;
+    }
+
+    .aboutHeaderOne{
+        font-size: 16px;
+    }
+
+    .aboutHeaderTwo{
+        font-size: 16px;
+    }
+
+    .aboutParagraph{
+        font-size: 8px;
+    }
+
+    .deployedDiv{
+        font-size: 8px;
+    }
 }
